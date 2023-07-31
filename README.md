@@ -140,3 +140,38 @@ public class Exception {
 
 }
 
+
+1. We have different messages because of different way to handle the exceptions. So, we use multiple catch blocks.
+
+2. We have different exceptions but the same messages. So, we an use one catch block.
+
+   The root class of exception is 'Exception'. 'ArithmeticException' can only handle arithmetic. To handle all exceptions we can use the root class 'Exception'.
+
+
+   package com.pnc.exception;
+
+import java.util.*;
+
+public class Exception {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Application starts!");
+		Scanner s = new Scanner(System.in);
+		
+		try {
+			System.out.println("Enter a number");
+			int num = s.nextInt();
+			System.out.println(10/num);
+		}
+		catch(Exception e){
+			System.out.println("Handle all exceptions";
+   			System.out.println("you got exception" + e);
+		}
+		System.out.println("Rest of application");
+
+	}
+
+}
+
+
