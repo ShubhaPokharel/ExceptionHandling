@@ -49,7 +49,7 @@ Exception code is code that may or may not raise an exception.
 - When an exception rised to the try block, the 'catch()' block will handle the exception.
 
 
-###### Ex:
+#### Ex:
 
 class Test{
 
@@ -85,7 +85,7 @@ class Test{
 
 ***********************
 
-###### Once we handle the exception - 
+#### Once we handle the exception - 
 
 1. program will be terminated normally
 
