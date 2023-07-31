@@ -21,6 +21,7 @@ Note:
 Any number divisible by 0 is 0. In programming, the compiler will generate an "ArithmeticException" error.
 
 
+
 If the application contains exceptions - 
 
 1. program terminated abnormally
