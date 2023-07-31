@@ -155,7 +155,7 @@ import java.util.*;
 public class Exception {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		System.out.println("Application starts!");
 		Scanner s = new Scanner(System.in);
 		
