@@ -111,7 +111,7 @@ public class Exception {
 		System.out.println("Application starts!");
   
 		Scanner s = new Scanner(System.in);
-  
+   
 		
 		try {
   
