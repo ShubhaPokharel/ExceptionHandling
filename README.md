@@ -176,3 +176,105 @@ public class Exception {
 }
 
 
+## There are 3 types of Exceptions - 
+
+1. Checked exception
+
+2. Unchecked exception
+
+3. errors
+
+ #### Checked Exception
+
+ • Checked exception is caused from the develepors mistake.  
+
+ Ex:
+
+ package com.pnc.bank;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class FileNotFound {
+
+	public static void main(String[] args) {
+		
+		try {
+  
+			FileInputStream fis = new FileInputStream("abc.txt");
+   
+		}
+  
+		catch(FileNotFoundException e){
+  
+			System.out.println("not available");
+   
+		}
+	}
+
+}
+
+If the develepor cant find the file, then we will get FileNotFoundException. 
+
+ - Whenever we get a checked error, we have to handle the error if we are the develepor.
+
+
+
+ #### Unchecked Exception
+
+• Unchecked exceptions is caused from the end user's inputs.
+
+Example:
+
+Code:
+
+package com.pnc.bank;
+
+public class Exception {
+
+	public static void main(String[] args) {
+ 
+		char a = "aruna".charAt(12);
+  
+		System.out.println(a);
+
+	}
+
+
+}
+
+Error:
+
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: 12
+
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
+ 
+	at java.base/java.lang.String.charAt(String.java:1515)
+ 
+	at com.pnc.bank.Exception.main(Exception.java:7)
+ 
+
+//We can’t find the index of 12 because aruna does not have 12 characters. So, we will get “StringIndexOutOfBoundsException”.
+
+
+
+#### Errors
+
+• Errors are caused due to the lack of System resources. System resources are basically memory in the computer. 
+
+- We cant handle errors.
+
+
+An example of an error is 'StackOverFlowError'. 'StackOverFlowError' is caused whenever the memory keeps stacking up and it never stops(like a loop). 
+
+
+##### Difference between Errors and Exceptions
+
+1. Exceptions are caused due to the end user's inputs or the develepors mistake.
+
+2. Errors are caused due to the lack of System resources.
+
+
+
+ 
+   
