@@ -192,8 +192,8 @@ public class Exception {
 
  package com.pnc.bank;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.*;
+
 
 public class FileNotFound {
 
